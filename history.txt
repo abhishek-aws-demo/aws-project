@@ -1,0 +1,193 @@
+    1  exit
+    2  sudo -i
+    3  sudo apt update
+    4  sudo apt-install docker.io -y
+    5  sudo apt-get install docker.io -y
+    6  exit
+    7  sudo -i
+    8  su -i
+    9  su -
+   10  visudo
+   11  sudo -i
+   12  su -
+   13  sudo -i
+   14  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+   15  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+   16  gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
+   17  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   18  https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   19  apt-get install terraform
+   20  yes
+   21  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+   22  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+   23  gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
+   24  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   25  https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   26  sudo apt update
+   27  sudo apt-get install terraform
+   28  terraform --help
+   29  terraform -help plan
+   30  open -a Docker
+   31  sudo apt install xdg-utils
+   32  open -a Docker
+   33  mkdir learn-terraform-docker-container
+   34  cd learn-terraform-docker-container
+   35  terraform {
+   36  }
+   37  provider "docker" {}
+   38  resource "docker_image" "nginx" {
+   39  }
+   40  resource "docker_container" "nginx" {
+   41  }
+   42  vi main.tf
+   43  ls -l
+   44  cat main.tf 
+   45  exit
+   46  mkdir aws-demo
+   47  cd aws-demo/
+   48  touch main.tf
+   49  vimain.tf
+   50  ls
+   51  resource "aws_instance" "ec2_example" {
+   52  }
+   53  vi main.tf
+   54  cat main.tf
+   55  terraform init
+   56  ls .terraform
+   57  terraform plan
+   58  terraform apply
+   59  vi main.tf
+   60  cat main.tf
+   61  ls -lart
+   62  terraform init
+   63  terraform plan
+   64  terraform apply
+   65  ls -l
+   66  terraform init
+   67  terraform plan
+   68  terraform apply
+   69  docker ps
+   70  terraform destroy
+   71  terraform -help
+   72  mkdir aws-variable-demo
+   73  cd aws-variable-demo
+   74  vi main.tf
+   75  cat main.tf
+   76  vi main.tf
+   77  cat main.tf
+   78  terraform init
+   79  terraform plan
+   80  terraform apply
+   81  vi main.tf
+   82  cat main.tf
+   83  terraform init
+   84  terraform plan
+   85  terraform apply
+   86  terraform destroy
+   87  vi main.tf
+   88  cat main.tf
+   89  terraform init
+   90  terraform plan
+   91  terraform apply
+   92  vi main.tf
+   93  cat main.tf
+   94  terraform init
+   95  terraform plan
+   96  terraform apply
+   97  vi main.tf
+   98  cat main.tf
+   99  terraform init
+  100  terraform plan
+  101  terraform apply
+  102  terraform destroy
+  103  vi main.tf
+  104  terraform init5
+  105  terraaform init
+  106  terraform init
+  107  terraform plan
+  108  terraform apply
+  109  vi main.tf
+  110  terraform init
+  111  terraform plan
+  112  terraform apply
+  113  vi main.tf
+  114  terraform init
+  115  terraform plan
+  116  terraform apply
+  117  terraform destroy
+  118  vi main.tf
+  119  terraform init
+  120  terraform plan
+  121  terraform apply
+  122  main.tf
+  123  vi main.tf
+  124  ls
+  125  cat main.tf
+  126  vi main.tf
+  127  cat main.tf
+  128  vi variable.tf
+  129  ls
+  130  cat variable.tf
+  131  terraform init
+  132  terraform plan
+  133  terraform apply
+  134  terraform destroy
+  135  cd terraform-demo/
+  136  terraform
+  137  tf
+  138  ls -lrt /home/abhi/.bashrc
+  139  vi /home/abhi/.bashrc
+  140  tf
+  141  source /home/abhi/.bashrc
+  142  tf
+  143  tf init
+  144  tf fmt
+  145  tf validate
+  146  tf plan
+  147  aws configure
+  148  apt install awscli
+  149  sudo apt install awscli
+  150  which 
+  151  which  aws
+  152  aws configure
+  153  cd 
+  154  cd -
+  155  cd
+  156  ls -l
+  157  ls -la
+  158  cd .aws
+  159  ls -la
+  160  cat credentials 
+  161  cat config 
+  162  cd 
+  163  cd workspace/terraform-demo/
+  164  ls -lrt
+  165  tf plan
+  166  alias tf
+  167  tf apply
+  168  tf plan -out my_plan
+  169  terraform apply "my_plan"
+  170  tf plan
+  171  tf init
+  172  tf plan
+  173  tf plan -out my_plan.json
+  174  terraform apply "my_plan.json"
+  175  tf plan
+  176  tf init
+  177  tf plan
+  178  tf apply
+  179  tf apply -auto-approve
+  180  tf apply
+  181  terraform refresh
+  182  tf import --help
+  183  tf import aws_iam_user.user2 arn:aws:iam::058264319793:user/pavan
+  184  tf import aws_iam_user.user2 "arn:aws:iam::058264319793:user/pavan"
+  185  tf import aws_iam_user.user2 pavan
+  186  tf show aws_iam_user.user2
+  187  tf status
+  188  tf show
+  189  tf plan
+  190  tf fmt
+  191  tf plan
+  192  history
+  193  history>history.txt
