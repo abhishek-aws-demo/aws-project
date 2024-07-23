@@ -7,7 +7,7 @@ stages:
       - job: valiadate-job
         runs-on: ubuntu-latest
         steps:
-          - script: |
+          - run: |
               echo "This is my first step"
               echo "This is second line"
-          - script: echo "This is my second step"
+          - run: echo "This is my second step"
