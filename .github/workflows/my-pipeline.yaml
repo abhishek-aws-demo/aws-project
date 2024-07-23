@@ -11,6 +11,7 @@ jobs:
           echo "This is second line"
       - run: echo "This is my second step"
   plan:
+    needs: valiadate
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is from plan stage"
