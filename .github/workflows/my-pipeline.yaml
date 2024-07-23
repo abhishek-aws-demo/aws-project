@@ -1,5 +1,8 @@
 name: My first pipeline
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 
 jobs:
@@ -7,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "This is my first step"
-          echo "This is second line"
+          sudo apt -
       - run: echo "This is my second step"
   plan:
     needs: valiadate
