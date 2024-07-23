@@ -6,7 +6,6 @@ on:
 
 
 jobs:
-
   valiadate:
     runs-on: ubuntu-latest
     steps:
@@ -26,8 +25,17 @@ jobs:
         run: terraform init
       - name: Terraform validate
         run: terraform validate
+  scanning:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo 'This is scanning.'
+          sleep 60
+
   plan:
-    needs: valiadate
+    needs: 
+      - valiadate
+      - scanning
     runs-on: ubuntu-latest
     steps:
       - name: checkout
