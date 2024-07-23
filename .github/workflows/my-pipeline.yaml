@@ -16,10 +16,10 @@ jobs:
           terraform_version: 1.1.7
       - name: Terraform init
         run: |
-        echo "Current directory is:"
-        pwd
-        ls -lRt
-        terraform init
+          echo "Current directory is:"
+          pwd
+          ls -lRt
+          terraform init
       - name: Terraform validate
         run: terraform validate
       - name: Plan
