@@ -1,4 +1,4 @@
-name: My first pipeline
+name: Destroy pipeline
 on:
   workflow_dispatch:
 

@@ -1,4 +1,4 @@
-name: My first pipeline
+name: Apply pipeline
 on:
   push:
     branches:
