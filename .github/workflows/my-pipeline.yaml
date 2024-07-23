@@ -1,13 +1,12 @@
 name: My first pipeline
 on: [push]
 
-stages:
-  - stage: validate
-    jobs:
-      valiadate-job:
-        runs-on: ubuntu-latest
-        steps:
-          - run: |
-              echo "This is my first step"
-              echo "This is second line"
-          - run: echo "This is my second step"
+
+jobs:
+  valiadate-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "This is my first step"
+          echo "This is second line"
+      - run: echo "This is my second step"
