@@ -15,3 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is from plan stage"
+  apply:
+    needs: plan
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is from apply stage"
