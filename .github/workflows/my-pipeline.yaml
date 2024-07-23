@@ -1,0 +1,14 @@
+name: My first pipeline
+on: 
+  - main
+
+stages:
+  - stage: validate
+    jobs:
+      - job: valiadate-job
+        runs-on: ubuntu-latest
+        steps:
+          - script: |
+              echo "This is my first step"
+              echo "This is second line"
+          - script: echo "This is my second step"
