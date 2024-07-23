@@ -1,6 +1,5 @@
 name: My first pipeline
-on: 
-  - main
+on: [push]
 
 stages:
   - stage: validate
