@@ -4,7 +4,7 @@ on: [push]
 stages:
   - stage: validate
     jobs:
-      - job: valiadate-job
+      valiadate-job:
         runs-on: ubuntu-latest
         steps:
           - run: |
