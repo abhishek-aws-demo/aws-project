@@ -3,10 +3,14 @@ on: [push]
 
 
 jobs:
-  valiadate-job:
+  valiadate:
     runs-on: ubuntu-latest
     steps:
       - run: |
           echo "This is my first step"
           echo "This is second line"
       - run: echo "This is my second step"
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is from plan stage"
