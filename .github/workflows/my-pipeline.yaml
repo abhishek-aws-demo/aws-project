@@ -21,7 +21,7 @@ jobs:
       - name: Plan
         run: terraform plan
   apply:
-    needs: plan
+    needs: valiadate
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is from apply stage"
