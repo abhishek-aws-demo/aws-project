@@ -1,16 +1,16 @@
 resource "aws_iam_user" "abhi" {
-  name = "Abhishek"
+  name = "Abhishek2"
   tags = {
     "name" = "abhi_user"
   }
 }
 
 resource "aws_iam_user" "satish" {
-  name = "Satish"
+  name = "Satish2"
 }
 
 resource "aws_iam_user" "user2" {
-  name                 = "pavan"
+  name                 = "pavan2"
   path                 = "/"
   permissions_boundary = null
   tags                 = {}
